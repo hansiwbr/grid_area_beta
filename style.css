@@ -5,188 +5,216 @@
     margin: 0;
 }
 
-header
+
+@media (max-width: 1200px)
 {
-    z-index: 999;
-    position: relative;
-}
-
-.body
-{
-    z-index: -1;
-    width: 100%;
-    
-    display: grid;
-    grid-template-columns:  
-    1fr 1fr 1fr 1fr;
-    grid-template-rows: 
-    
-    1fr
-    1fr
-    1fr
-    1fr
-    1fr
-    1fr
-    0.2fr;
-
-    grid-template-areas: 
-    
-    "jumbobild jumbobild jumbobild jumbobild"
-    "main main main main"
-    "main main main main"
-    "main main main main"
-    "content content content content"
-    "content content content content"
-    "footer footer footer footer";
-}
-
-.header
-{
-    grid-area: header;
-    background-color: rgb(71, 71, 71);
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
-    height: 50px;
-    width: 100%;
-
-}
-.header_logo
-{
-    background-color: rgb(71, 71, 71);
-    width: 80%;
-    color: white;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.header_container
-{
-    background-color: red;
-    width: 20%;
-    display: flex;
-    justify-content: flex-start;
 
 
-}
-.header_menu
-{
-    /* border: 0.5px solid rgb(71, 71, 71); */
-    padding: 15px;
-    background-color: rgb(255, 0, 0);
-    /* padding-left: 40px;
-    padding-right: 40px; */
-    width: 100%;
-    
-    text-align: center;
-    color: white;
-    display: grid;
-    grid-template-columns: 
-    2fr ;
 
-  
-    
-}
-.header_box
-{
-    display: none;
-    border: 0.5px solid rgb(71, 71, 71);
-    padding: 10px;
-    background-color: rgb(71, 71, 71);
-    /* padding-left: 40px;
-    padding-right: 40px; */
-    width: 100%;
-    text-align: center;
-    color: white;
-   
-   
-    
+
+    header
+    {
+        z-index: 999;
+        position: relative;
+    }
+
+    .body
+    {
+        z-index: -1;
+        width: 100%;
+        
+        display: grid;
+        grid-template-columns:  
+        1fr 1fr 1fr 1fr;
+        grid-template-rows: 
+        
+        1fr
+        1fr
+        1fr
+        1fr
+        1fr
+        1fr
+        0.2fr;
+
+        grid-template-areas: 
+        
+        "jumbobild jumbobild jumbobild jumbobild"
+        "main main main main"
+        "main main main main"
+        "main main main main"
+        "content content content content"
+        "content content content content"
+        "footer footer footer footer";
+    }
+
+    .header
+    {
+        grid-area: header;
+        background-color: rgb(71, 71, 71);
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        height: 50px;
+        width: 100%;
+
+    }
+    .header_logo
+    {
+        background-color: rgb(71, 71, 71);
+        width: 80%;
+        color: white;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .header_container
+    {
+        background-color: red;
+        width: 20%;
+        display: flex;
+        justify-content: flex-start;
+
+
+    }
+    .header_menu
+    {
+        /* border: 0.5px solid rgb(71, 71, 71); */
+        padding: 10%;
+        background-color: rgb(255, 0, 0);
+        /* padding-left: 40px;
+        padding-right: 40px; */
+        width: 98%;
+        
+        text-align: center;
+        color: white;
+        display: grid;
+        grid-template-columns: 
+        2fr ;
 
     
-}
+        
+    }
+    .header_box 
+    {
+        display: none;
+        border: 0.5px solid rgb(71, 71, 71);
+        padding: 15%;
+        background-color: rgb(71, 71, 71);
+        /* padding-left: 40px;
+        padding-right: 40px; */
+        width: 130%;
+        text-align: center;
+        color: white;
+    
+    
+        
 
-.header_box a, .header_container a
-{
-    text-decoration: none;
-    color: white;
-    border-left: 2px solid red;
-    padding: 5px;
-}
+        
+    }
 
-.header_menu:hover .header_box
-{
-    display: block;
-   
+    .header_box a, .header_container a
+    {
+        text-decoration: none;
+        color: white;
+        border-left: 2px solid red;
+        padding: 5px;
+    }
 
-}
+    .header_menu:hover .header_box
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: relative;
+        right: 12%;
+    
 
-.headerbox a:hover
-{
-    color: rgb(226, 226, 226);
-    font-weight: bolder;
-}
+    }
 
-.active
-{
-    margin-top: 7px;
-}
+    .headerbox a:hover
+    {
+        color: rgb(226, 226, 226);
+        font-weight: bolder;
+    }
+
+    .active
+    {
+        margin-top: 7px;
+    }
 
 
 
 
-.main
-{
-    grid-area: main;
-    background-color: aliceblue;
-    display: inline-block;
-    padding: 10px;
-    padding-right: 10px;
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-   
-}
+    .main
+    {
+        grid-area: main;
+        background-color: aliceblue;
+        display: inline-block;
+        width: 99%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        
+    
+    }
 
-.main_box 
-{
-    padding: 10px;
-    margin-bottom: 20px;
-}
+    .main_box 
+    {
+        
+        margin-bottom: 20px;
+        width: 95%;
+    }
 
-.content
-{
-    padding: 10px;
-    grid-area: content;
-    width: 95%;
-    background-color: rgb(255, 52, 52);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
+    
+ 
+    .main_box p 
+    {
+       width: 95%;
+       margin-left: 10px;
+    }
 
-.content_box 
-{
-    padding: 10px;
-    margin-bottom: 5px;
-}
+    .content
+    {
+        grid-area: content;
+        width: 99%;
+        background-color: rgb(255, 52, 52);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 
-.footer
-{
-    grid-area: footer;
-    background-color: gray;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
-    padding: 12px;
-}
+    .content_box 
+    {
 
-.bild
-{
-    height: 30vh;
-    width: 100vw;
-    background-image: url(https://www.uvex-safety.com/blog/wp-content/uploads/2021/12/Brandschutz-Feuer-900x900px.jpg);
-    background-size:cover ;
-    background-color: rosybrown;
+        margin-bottom: 10px;
+        width: 95%;
+    
+    }
+
+    .content_box p 
+    {
+        width: 95%;
+        margin-left: 10px;
+    }
+
+    .footer
+    {
+        grid-area: footer;
+        background-color: gray;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+        padding: 12px;
+    }
+
+    .bild
+    {
+        height: 30vh;
+        width: 100vw;
+        background-image: url(https://www.uvex-safety.com/blog/wp-content/uploads/2021/12/Brandschutz-Feuer-900x900px.jpg);
+        background-size: cover;
+        background-color: rosybrown;
+    }
+
 }
