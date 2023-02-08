@@ -54,7 +54,7 @@ header
 .header_logo
 {
     background-color: rgb(71, 71, 71);
-    width: 40%;
+    width: 80%;
     color: white;
     text-align: center;
     margin: 0 auto;
@@ -63,7 +63,7 @@ header
 .header_container
 {
     background-color: red;
-    width: 60%;
+    width: 20%;
     display: flex;
     justify-content: flex-start;
 
@@ -131,25 +131,7 @@ header
     margin-top: 7px;
 }
 
-/* .one
-{
-    grid-area: one;
-}
 
-.two
-{
-    grid-area: two;
-}
-
-.three
-{
-    grid-area: three;
-}
-
-.four
-{
-    grid-area: four;
-} */
 
 
 .main
@@ -160,7 +142,16 @@ header
     padding: 10px;
     padding-right: 10px;
     width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
    
+}
+
+.main_box 
+{
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 .content
@@ -169,6 +160,15 @@ header
     grid-area: content;
     width: 95%;
     background-color: rgb(255, 52, 52);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.content_box 
+{
+    padding: 10px;
+    margin-bottom: 5px;
 }
 
 .footer
